@@ -31,4 +31,9 @@ public class MaintenanceController {
         this.message.resetMessage();
         return "ok";
     }
+
+    @GetMapping("/api/message")
+    public String getMessage(){
+        return this.message.getMessage();
+    }
 }

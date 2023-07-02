@@ -31,4 +31,15 @@ class MaintenanceControllerTests {
         // Then
         assertEquals("ok", result);
     }
+
+    @Test
+    void testGetMessage(){
+        MaintenanceController controller = new MaintenanceController();
+
+        controller.setMessage("Sunday");
+
+        String result = controller.getMessage();
+
+        assertEquals("Sunday", result);
+    }
 }
