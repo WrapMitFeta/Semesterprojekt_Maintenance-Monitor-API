@@ -12,4 +12,8 @@ public class Message {
         this.message = message;
     }
 
+    public void resetMessage() {
+        this.message = "Everything works as expected";
+    }
+
 }

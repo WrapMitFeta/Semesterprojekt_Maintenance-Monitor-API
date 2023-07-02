@@ -19,4 +19,16 @@ class MaintenanceControllerTests {
         // Then
         assertEquals("ok", result);
     }
+
+    @Test
+    void testResetMessage() {
+        // Given
+        MaintenanceController controller = new MaintenanceController();
+
+        // When
+        String result = controller.resetMessage();
+
+        // Then
+        assertEquals("ok", result);
+    }
 }
