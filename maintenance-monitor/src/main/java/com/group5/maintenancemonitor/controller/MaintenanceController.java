@@ -21,4 +21,14 @@ public class MaintenanceController {
         this.message.setMessage(message);
         return "ok";
     }
+
+    /**
+     * Resets the service message to standard message
+     * @return
+     */
+    @GetMapping("/api/message/reset")
+    public String resetMessage() {
+        this.message.resetMessage();
+        return "ok";
+    }
 }
