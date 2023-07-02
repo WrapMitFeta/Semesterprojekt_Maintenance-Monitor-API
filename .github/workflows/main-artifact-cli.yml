@@ -34,5 +34,5 @@ jobs:
     - name: upload
       uses: actions/upload-artifact@v2
       with:
-        name: Stringification
+        name: Maintenance-Monitor-Group-5
         path: staging
