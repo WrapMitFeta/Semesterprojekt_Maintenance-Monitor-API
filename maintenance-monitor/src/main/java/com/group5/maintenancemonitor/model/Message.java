@@ -16,4 +16,6 @@ public class Message {
         this.message = "Everything works as expected";
     }
 
+    public String getMessage(){ return this.message;}
+
 }
