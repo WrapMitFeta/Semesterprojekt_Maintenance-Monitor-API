@@ -29,8 +29,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file maintenance-monitor/pom.xml
-    - name: copy to stagign
-      run: mkdir staging && cp target/*.jar staging
+    - name: copy to staging
+      run: mkdir staging && cp maintenance-monitor/target/*.jar staging
     - name: upload
       uses: actions/upload-artifact@v2
       with:
